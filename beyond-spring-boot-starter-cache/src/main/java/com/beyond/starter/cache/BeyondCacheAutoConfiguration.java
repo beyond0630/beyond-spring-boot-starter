@@ -3,6 +3,7 @@ package com.beyond.starter.cache;
 import com.beyond.cache.CacheManager;
 import com.beyond.cache.caffeine.CaffeineCacheManger;
 import com.beyond.cache.ehcache.EhCacheManager;
+import com.beyond.cache.noop.NoOpCacheManager;
 import com.beyond.starter.cache.enums.CacheType;
 import com.beyond.starter.cache.property.CacheProperties;
 import com.beyond.starter.cache.property.CaffeineCacheProperties;
@@ -32,6 +33,6 @@ public class BeyondCacheAutoConfiguration {
         if (CacheType.EHCACHE == type) {
             return new EhCacheManager(cacheProperties);
         }
-        return null;
+        return new NoOpCacheManager();
     }
 }

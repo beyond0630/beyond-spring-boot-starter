@@ -8,6 +8,8 @@ public enum CacheType {
 
     EHCACHE,
 
-    CAFFEINE
+    CAFFEINE,
+
+    NONE
 
 }

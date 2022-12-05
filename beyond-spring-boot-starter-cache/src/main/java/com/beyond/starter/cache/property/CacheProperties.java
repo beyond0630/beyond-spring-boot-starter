@@ -13,7 +13,7 @@ import java.time.Duration;
 @ConfigurationProperties("app.cache")
 public class CacheProperties implements CacheOptions {
 
-    private CacheType type;
+    private CacheType type = CacheType.CAFFEINE;
     private int maxCapacity = 10000;
 
     private Duration expiration = Duration.ofHours(2);
