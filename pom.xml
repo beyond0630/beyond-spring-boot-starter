@@ -20,7 +20,7 @@
 
         <beyond-common.version>1.0.0</beyond-common.version>
         <spring-boot.version>2.7.5</spring-boot.version>
-        <beyond-framework.version>1.0.0</beyond-framework.version>
+        <beyond-framework.version>2.0.0</beyond-framework.version>
     </properties>
 
     <dependencyManagement>
